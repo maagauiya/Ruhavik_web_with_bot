@@ -9,5 +9,4 @@ urlpatterns = [
   path('test/',test,name='test'),
   path('start/',start,name='start'),
   path('kms/',kms,name='kms'),
-  path("poo",pop)
 ]   

@@ -17,11 +17,21 @@ admin.site.register(Malfunctions)
 admin.site.register(Police_problem)
 admin.site.register(Refueling)
 admin.site.register(Trip_and_documents)
+
+class Activity1(admin.ModelAdmin):
+    list_display = ('driver','activnost_date')
+
+admin.site.register(Activity,Activity1)
 # admin.site.register(Start)
-admin.site.register(End)
+# admin.site.register(End)
 admin.site.register(Unique_km)
 
 class Start1(admin.ModelAdmin):
     list_display = ('driver','start_date')
 
 admin.site.register(Start,Start1)
+
+class End1(admin.ModelAdmin):
+    list_display = ('driver', 'end_date')
+
+admin.site.register(End,End1)

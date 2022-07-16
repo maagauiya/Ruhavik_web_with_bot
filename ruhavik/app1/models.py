@@ -174,4 +174,9 @@ class Unique_km(models.Model):
     def __str__(self):
         return self.km
 
+class Activity(models.Model):
+    driver = models.ForeignKey(Driver, on_delete=models.CASCADE,null=True,blank=True)
+    activnost_hours = models.FloatField(null=True,blank=True)
+    activnost_date = models.DateTimeField(auto_now_add=True)
+    
 
